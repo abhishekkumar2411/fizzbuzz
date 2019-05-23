@@ -1,5 +1,6 @@
-# let us say we have to copy text from the give book Book1.txt to a file named output.txt
+#using import command for system specific parameters
+import sys
 
+#defined a function called  l33t
+def l33t(line):
 
-f = open('Book1.txt') 
-f1 = open('output.txt', 'k')
