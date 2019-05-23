@@ -33,3 +33,18 @@ def fun(read,wr):
 			new =l33t(line)
 			F2.write(new)
 	return myfile
+
+def report(opr):
+	print(f"Pages Copied: {linecount/25}")
+	print(f"Lines Copied: {linecount}")
+	print(f"Words Copied: {count}")
+	print(f"Pages Copied: {linecount/25}")
+	alpha = 0
+	num = 0
+	with open(opr,'r') as docs:
+		for line in docs.readline():
+			for letter in line.lower():
+				if letter.isaplha():
+					alpha += 1
+				if letter.is():
+					num += 1
