@@ -8,3 +8,13 @@ def l33t(line):
 	global count
 	for letter in line:
 	count += 1
+	if letter in letwords:
+		letmsg = letmsg.replace('o',str(0))
+		letmsg = letmsg.replace('O',str(0))
+		letmsg = letmsg.replace('a',str(4))
+		letmsg = letmsg.replace('A',str(4))
+		letmsg = letmsg.replace('e',str(3))
+		letmsg = letmsg.replace('E',str(3))
+		letmsg = letmsg.replace('i',str(1))
+		letmsg = letmsg.replace('I',str(1))
+		return letmsg
