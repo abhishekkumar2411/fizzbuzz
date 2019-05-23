@@ -23,3 +23,22 @@
     list2 = file2.readlines().split()
     list3 = file3.readlines().split()
     list4 = file4.readlines().split()
+ file1 = open("BOOK1.txt", "r")
+    file2 = open("BOOK2.txt", "r")
+    file3 = open("BOOK3.txt", "r")
+    file4 = open("20k.txt", "r")
+    file5 = open("book1uniquelist", "a")
+    file6= open("book2uniquelist", "a")
+    file7= open("book3uniquelist", "a") 
+    file8= open("rarelist", "a")
+    list1 = file1.readlines().split()
+    list2 = file2.readlines().split()
+    list3 = file3.readlines().split()
+    list4 = file4.readlines().split()
+
+	for i in list4:
+		for j in list1:
+			for k in list2:
+				for m in list3:
+					if i!=j && i!=k && i!=j && i!=m:
+						file8.write(i)
