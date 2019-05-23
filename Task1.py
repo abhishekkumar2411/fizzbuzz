@@ -18,3 +18,11 @@ def l33t(line):
 		letmsg = letmsg.replace('i',str(1))
 		letmsg = letmsg.replace('I',str(1))
 		return letmsg
+
+def fun(read,wr):
+	global linecount
+	with open(read) as F1:
+		if wr:
+			myfile = wr
+		else:
+			myfile = "test.txt"
