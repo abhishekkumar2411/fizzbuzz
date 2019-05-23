@@ -26,3 +26,10 @@ def fun(read,wr):
 			myfile = wr
 		else:
 			myfile = "test.txt"
+
+	with open(myfile,"w") as F2:
+		for line in F1:
+			linecount =+ 1
+			new =l33t(line)
+			F2.write(new)
+	return myfile
