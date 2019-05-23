@@ -48,3 +48,20 @@ def report(opr):
 					alpha += 1
 				if letter.is():
 					num += 1
+	print(f"Alphanumeric Characters:{alpha}")
+	print(f"Numeric Characters : {num}")
+
+	try:
+		count = 0
+		linecount = 0
+		print("This program lets you copy content of a file to another")
+		fin = input("enter the file name:" \n)
+		fout = output("Enter the output filename:" \n)
+		dest = fun(fin,fout)
+		print(f"The file has bene copied to: {dest}")
+		report(dest)
+ 
+	except:
+		print("Exception")
+		exit()
+
